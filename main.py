@@ -27,8 +27,8 @@ def get_csv(file: UploadFile):
 			shutil.copyfileobj(file.file, buffer)
 	finally:
 		file.file.close()
-	trimming()
-	return
+
+	return trimming()
 
 if __name__ == "__main__":
 	uvicorn.run(app, port=8080, host='0.0.0.0')
