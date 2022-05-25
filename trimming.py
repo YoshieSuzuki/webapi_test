@@ -1,10 +1,10 @@
-from pydub import AudioSegment
-from fastapi import UploadFile
-from inaSpeechSegmenter import Segmenter, seg2csv
-import numpy as np
+import csv
 import json
 import os
-import csv
+
+from fastapi import UploadFile
+from inaSpeechSegmenter import Segmenter, seg2csv
+from pydub import AudioSegment
 
 
 def trimming():

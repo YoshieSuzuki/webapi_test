@@ -1,4 +1,3 @@
-import os
 import shutil
 from distutils.command.upload import upload
 from pathlib import Path

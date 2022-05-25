@@ -1,0 +1,5 @@
+pathlib
+uvicorn
+fastapi
+pydub
+inaSpeechSegmenter
