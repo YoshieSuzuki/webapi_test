@@ -6,17 +6,14 @@ from pathlib import Path
 import uvicorn
 from fastapi import FastAPI, File, UploadFile
 
-from trimming import test, trimming
+from trimming import trimming
 
 app = FastAPI()
 
+# test
 @app.get('/index/{name}')
 def hello_world(name: str):
 	return f"Hello {name}!"
-
-@app.post('/api/getcsv')
-def get_csv(file: UploadFile = File(...)):
-	return test(file)
 
 @app.post('/api/trimming/')
 def get_csv(file: UploadFile):
